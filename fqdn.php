@@ -2,7 +2,7 @@
 
 session_start();
 	
-$fqdn = "weightwatcher2.cloudapps.example.com";
+$fqdn = "weightwatcher.cloudapps.example.com";
 if ( isset($_SESSION['fqdn']) ) {
 	$fqdn = $_SESSION['fqdn'];
 } else {
@@ -37,9 +37,9 @@ if ( isset($_SESSION['fqdn']) ) {
       <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.min.css"/>
       <script src="js/jquery-1.10.2.min.js" ></script>
       <script src="js/jquery.mobile-1.4.0.min.js"></script>
-            
-      <link rel="stylesheet" href="css/testdrive.css" />      
-      <script src="js/testdrive.js"  ></script>  
+
+      <link rel="stylesheet" href="css/testdrive.css" />
+      <script src="js/testdrive.js"  ></script>
 
    </head>
    <body>
@@ -49,37 +49,35 @@ if ( isset($_SESSION['fqdn']) ) {
 <section id="pageFQDN" data-role="page">
 
    <script> writeHeader("backhome", "info")</script>
-     
+
    <div class="content" data-role="content">
 
-      <form id="register" action="fqdn_submit.php" method="get"  rel="external" data-ajax="false"> 
+      <form id="register" action="fqdn_submit.php" method="get"  rel="external" data-ajax="false">
          <div data-role="fieldcontain">
-            
+
             <fieldset data-role="controlgroup">
             <legend style="color:white;">FQDN:PORT Entry</legend>
-            
+
             <div data-role="fieldcontain">
             <label for="fqdn" style="color:white;">FQDN:PORT</label>
                <input type="text" name="fqdn" id="fqdn" class="fqdn" value="<?php echo $fqdn; ?>" data-mini="true" >
             </div>
 
             </fieldset>
-                  
+
            <center>
               <input type="submit" name="submit" id="submit" value="Submit" data-inline="true">
            </center>
 
          </div>
          </form>
-         
+
    </div>
-   
+
    <script> writeFooter(); </script>
 
 </section>
 <!-- End: FQDN Page -->
 
    </body>
-</html>	
-
-          
+</html>
