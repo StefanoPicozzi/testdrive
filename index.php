@@ -1,4 +1,14 @@
 <?php
+
+session_start();
+
+$fqdn = "weightwatcher.cloudapps.example.com";
+if ( isset($_SESSION['fqdn']) ) {
+	$fqdn = $_SESSION['fqdn'];
+} else {
+	$_SESSION['fqdn'] = $fqdn;
+}
+
 ?>
 
 <!doctype html>
