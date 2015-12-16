@@ -106,7 +106,12 @@ if ( isset($_SESSION['fqdn']) ) {
                         <a href="startscanner.php" data-ajax="false">Start Watch Scanner
                         </a>
                      </li>
-                                                                                                        
+
+                     <li>
+                        <a href="getdbusers.php" data-ajax="false">Test MySQL access
+                        </a>
+                     </li>
+                                                                                                                                   
                   </ul>
                </div>
             </div>
